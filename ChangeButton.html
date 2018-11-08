@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script>
+	function myFunction() {
+		var checkBox = document.getElementById("myCheck");
+		var text = document.getElementById("text");
+
+		if (checkBox.checked == true) {
+			disappear.style.display = "block";
+			finalbutton.style.display = "none";
+			rejectbutton.style.display = "none";
+			
+		} else {
+			disappear.style.display = "none";
+			rejectbutton.style.display = "block";
+		}
+	}
+</script>
+</head>
+<body>
+
+	<table>
+		<tr>
+			<td>Employee Id :</td>
+			<td><input type="text" name="EmployeeId"></td>
+		</tr>
+		<tr>
+			<td>First Name :</td>
+			<td><input type="text" name="firstName"></td>
+		</tr>
+		<tr>
+			<td>Last name :</td>
+			<td><input type="text" name="lastName"></td>
+		</tr>
+		<tr>
+			<input type="checkbox" id="myCheck" onclick="myFunction()">
+			<p id="disappear" style="display: none"><textarea rows="4" cols="40" name="address"></textarea></p>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input id="finalbutton" type="Submit" value="Sumbit"></td>
+			<td><input id="rejectbutton" type="Submit" value="Reject"></td>
+		</tr>
+	</table>
+
+
+
+</body>
+</html>
